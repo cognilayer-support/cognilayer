@@ -16,10 +16,6 @@ flowchart LR
     E --> F[Issue kommentieren]
 ```
 
-## Repositories
-
-Die Codebasis liegt in Azure DevOps (interne Repos, nicht öffentlich).
-
 ## Issue-Typen
 
 - **🐛 Bug** — Ein Fehler in der Plattform
