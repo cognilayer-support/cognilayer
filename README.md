@@ -18,17 +18,7 @@ flowchart LR
 
 ## Repositories
 
-Die Codebasis liegt in Azure DevOps:
-
-| Repo | Beschreibung |
-|------|-------------|
-| `cognilayer-infra` | Azure Bicep Infrastruktur |
-| `cognilayer-platform-api` | Backend-API (.NET) |
-| `cognilayer-platform-core` | Shared Library (.NET) |
-| `cognilayer-portal` | Angular Portal (UI) |
-| `cognilayer-marketing` | Angular Marketing (UI) |
-| `cognilayer-www` | Angular Public Website |
-| `cognilayer-management` | Management-Tools |
+Die Codebasis liegt in Azure DevOps (interne Repos, nicht öffentlich).
 
 ## Issue-Typen
 

@@ -12,7 +12,7 @@ body:
     id: repo
     attributes:
       label: Betroffenes Repository
-      placeholder: z.B. cognilayer-portal, cognilayer-platform-api
+      placeholder: z.B. portal, api, marketing
   - type: textarea
     id: problem
     attributes:

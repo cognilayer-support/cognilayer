@@ -13,7 +13,7 @@ body:
     attributes:
       label: Betroffenes Repository
       description: In welchem Azure DevOps Repo tritt der Fehler auf?
-      placeholder: z.B. cognilayer-portal, cognilayer-platform-api
+      placeholder: z.B. portal, api, marketing
     validations:
       required: true
   - type: textarea
