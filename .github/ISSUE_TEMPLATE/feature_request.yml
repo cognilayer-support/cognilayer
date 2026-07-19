@@ -7,7 +7,7 @@ assignees: []
 body:
   - type: markdown
     attributes:
-      value: "Danke für deinen Vorschlag! Hermes wird prüfen, ob und wie sich das umsetzen lässt."
+      value: "Danke für deinen Vorschlag! Die automatische Pipeline prüft die Umsetzbarkeit."
   - type: input
     id: repo
     attributes:

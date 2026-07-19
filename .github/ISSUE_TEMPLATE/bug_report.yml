@@ -7,7 +7,7 @@ assignees: []
 body:
   - type: markdown
     attributes:
-      value: "Danke, dass du einen Bug meldest! Hermes wird sich automatisch darum kümmern."
+      value: "Danke, dass du einen Bug meldest! Die automatische Pipeline kümmert sich darum."
   - type: input
     id: repo
     attributes:
