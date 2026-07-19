@@ -1,0 +1,44 @@
+---
+name: Bug Report
+description: Einen Fehler in der Cognilayer-Plattform melden
+title: "[Bug] "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: "Danke, dass du einen Bug meldest! Hermes wird sich automatisch darum kümmern."
+  - type: input
+    id: repo
+    attributes:
+      label: Betroffenes Repository
+      description: In welchem Azure DevOps Repo tritt der Fehler auf?
+      placeholder: z.B. cognilayer-portal, cognilayer-platform-api
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibung
+      description: Was passiert? Was sollte stattdessen passieren?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Schritte zum Reproduzieren
+      placeholder: |
+        1. Gehe zu '...'
+        2. Klicke auf '...'
+        3. Fehler: '...'
+  - type: input
+    id: environment
+    attributes:
+      label: Umgebung
+      description: Wo tritt der Fehler auf? (Production, Staging, Local)
+      placeholder: Production
+  - type: textarea
+    id: logs
+    attributes:
+      label: Fehlermeldungen / Logs
+      render: shell

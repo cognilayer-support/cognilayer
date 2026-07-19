@@ -1,0 +1,30 @@
+---
+name: Maintenance
+description: Refactoring, Dependency-Updates, CI/CD, technische Schulden
+title: "[Maintenance] "
+labels: ["maintenance"]
+assignees: []
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Betroffenes Repository
+      placeholder: z.B. cognilayer-infra, cognilayer-platform-core
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Beschreibung
+      description: Was muss gemacht werden?
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priorität
+      options:
+        - Niedrig
+        - Mittel
+        - Hoch
+      default: 1
