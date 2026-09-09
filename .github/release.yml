@@ -1,0 +1,29 @@
+# Release Notes Kategorien
+# GitHub konfiguriert automatisch generierte Release Notes über diese Kategorien.
+# Siehe: https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes
+
+changelog:
+  - label: breaking-change
+    title: "💥 Breaking Changes"
+    description: "Änderungen, die nicht abwärtskompatibel sind"
+  - label: enhancement
+    title: "✨ Neue Features & Verbesserungen"
+    description: "Neue Funktionen und sichtbare Verbesserungen"
+  - label: bug
+    title: "🐛 Bugfixes"
+    description: "Behobene Fehler"
+  - label: performance
+    title: "⚡ Performance"
+    description: "Leistungsverbesserungen"
+  - label: dependencies
+    title: "📦 Abhängigkeiten"
+    description: "Updates von Drittanbieter-Bibliotheken"
+  - label: documentation
+    title: "📖 Dokumentation"
+    description: "Dokumentationsänderungen"
+  - label: internal
+    title: "🔧 Interne Änderungen"
+    description: "Refactoring, CI/CD, Tests, Infrastruktur"
+  - label: security
+    title: "🔒 Sicherheit"
+    description: "Sicherheitsrelevante Änderungen"

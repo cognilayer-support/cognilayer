@@ -7,38 +7,74 @@ assignees: []
 body:
   - type: markdown
     attributes:
-      value: "Danke, dass du einen Bug meldest! Die automatische Pipeline kümmert sich darum."
-  - type: input
-    id: repo
+      value: |
+        Danke, dass du einen Bug meldest! Bitte fülle die Felder aus, damit wir den Fehler schnell finden und beheben können.
+
+  - type: dropdown
+    id: area
     attributes:
-      label: Betroffenes Repository
-      description: In welchem Azure DevOps Repo tritt der Fehler auf?
-      placeholder: z.B. portal, api, marketing
+      label: Bereich
+      description: In welchem Bereich tritt der Fehler auf?
+      options:
+        - Portal (Web UI)
+        - Self-Hosted Agent
+        - API / Backend
+        - Billing / Rechnung
+        - Anderes
     validations:
       required: true
+
   - type: textarea
     id: description
     attributes:
       label: Beschreibung
       description: Was passiert? Was sollte stattdessen passieren?
+      placeholder: |
+        Nach dem Klick auf "Server starten" erscheint eine Fehlermeldung...
     validations:
       required: true
+
   - type: textarea
     id: steps
     attributes:
       label: Schritte zum Reproduzieren
       placeholder: |
-        1. Gehe zu '...'
-        2. Klicke auf '...'
-        3. Fehler: '...'
+        1. Im Portal anmelden
+        2. Server auswählen
+        3. "Start" klicken
+        4. Fehler: ...
+    validations:
+      required: true
+
   - type: input
     id: environment
     attributes:
       label: Umgebung
-      description: Wo tritt der Fehler auf? (Production, Staging, Local)
-      placeholder: Production
+      description: Wo tritt der Fehler auf?
+      placeholder: z.B. Production, Staging
+    validations:
+      required: true
+
+  - type: input
+    id: agent_version
+    attributes:
+      label: Agent-Version (nur bei Self-Hosted)
+      description: Nur ausfüllen, wenn der Fehler den Self-Hosted Agent betrifft
+      placeholder: z.B. 1.0.0-build.1234
+
   - type: textarea
     id: logs
     attributes:
       label: Fehlermeldungen / Logs
+      description: Kopiere relevante Log-Auszüge hier hinein
       render: shell
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Bestätigungen
+      options:
+        - label: Ich habe bereits geprüft, ob es zu diesem Thema bereits ein offenes Issue gibt
+          required: true
+        - label: Ich habe sensible Daten (Passwörter, Tokens, API Keys) aus den Logs entfernt
+          required: true
